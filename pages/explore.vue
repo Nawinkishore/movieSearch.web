@@ -247,7 +247,7 @@ export default {
     back() {
       this.explore = false;
       this.redirectMovie = "";
-      this.search = "";
+      this.search.length = "";
     },
     searchMovie() {
       const foundmovie = this.listMovies.find(
