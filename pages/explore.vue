@@ -43,10 +43,10 @@
         >
           <NuxtLink to="/detailsPage">
             <img
-            @click="exploreRedirect(index)"
-            :src="list.img"
-            class="size-auto rounded-md mt-3 cursor-pointer hover:animate-pulse hover:shadow-md hover:shadow-slate-800"
-          />
+              @click="exploreRedirect(index)"
+              :src="list.img"
+              class="size-auto rounded-md mt-3 cursor-pointer hover:animate-pulse hover:shadow-md hover:shadow-slate-800"
+            />
           </NuxtLink>
           <div class="flex items-center justify-between mt-3">
             <h1 class="font-semibold">{{ list.Title }}</h1>
