@@ -14,8 +14,8 @@
         </div>
         <div>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <cart v-for="(item,index) in topMovies" :key="index" :item="item" />
-      
+            <!-- object transfer -->
+            <cart v-for="(item,index) in topMovies" :key="index" :item="item" /> 
           </div>
         </div>
         <div
