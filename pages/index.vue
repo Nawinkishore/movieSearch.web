@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <div>
       <div class="bg-[url('/public/bg.jpg')]">
         <div class="p-5">
@@ -14,7 +13,10 @@
           </div>
         </div>
         <div>
-          <cart  :item="topMovies"/>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <cart v-for="(item,index) in topMovies" :key="index" :item="item" />
+      
+          </div>
         </div>
         <div
           class="h-16 w-full bg-black text-white flex items-center justify-center"
