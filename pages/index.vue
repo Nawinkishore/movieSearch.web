@@ -15,7 +15,7 @@
         <div>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <!-- object transfer -->
-            <cart v-for="(item,index) in topMovies" :key="index" :item="item" /> 
+            <cart v-for="(item,index) in topMovies" :key="index" :items="item" /> 
           </div>
         </div>
         <div
@@ -35,6 +35,7 @@ export default {
         {
           Title: "Leo",
           img: "/leo.jpg",
+        
         },
         {
           Title: "Leo",

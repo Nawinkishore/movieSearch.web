@@ -3,12 +3,17 @@
     <div>
       <div class="h-full w-full bg-[#e5e5e5]">
         <div class="bg-[url('/public/bg.jpg')] h-screen">
-          <div class="flex items-center gap-3 p-3">
-            <NuxtLink to="/explore">
-              <i
-                class="fa-solid fa-chevron-left cursor-pointer text-white hover:text-blue-500"
-              ></i>
-            </NuxtLink>
+          <div class="flex w-full">
+            <div class="flex items-center gap-3 p-3">
+              <NuxtLink to="/explore">
+                <i
+                  class="fa-solid fa-chevron-left cursor-pointer text-white hover:text-blue-500"
+                ></i>
+              </NuxtLink>
+            </div>
+            <div class="p-5 w-full">
+              <navbar search="search" />
+            </div>
           </div>
 
           <div
@@ -38,6 +43,7 @@
 export default {
   data() {
     return {
+      search: false,
       redirectMovie: [
         {
           Title: "Leo",
